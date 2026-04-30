@@ -1,6 +1,6 @@
 # Copilot Instructions
 
-This repository demonstrates a documentation-first workflow for a simple React Hello World application.
+This repository demonstrates documentation-first workflow patterns for both a tiny React Hello World app and a much larger React-led product.
 
 ## Session Start Rule
 
@@ -10,13 +10,12 @@ If routing is still unclear after that, load `.agents/skills/session-router/SKIL
 
 ## Project Scope
 
-The application is intentionally small:
+The repository has two operating modes:
 
-- one React page
-- one visible greeting
-- optional future enhancements such as theme toggle or language toggle
+- `main` is intentionally small
+- `large-project` demonstrates a scaled workflow with a routing brief, an execution tracker, and a separated DDL appendix
 
-Keep all documentation proportional to that scope.
+Keep the documentation proportional to the selected branch.
 
 ## Documentation Policy
 
@@ -30,7 +29,8 @@ Keep all documentation proportional to that scope.
 During a normal session:
 
 1. Read the session continuation header and `Start Here` block.
-2. Load one controlling plan, spec, or ADR only if the session doc points to it.
+2. On `large-project`, load the routing brief before opening deeper planning docs.
+3. Load one controlling plan, spec, ADR, or appendix only if the session doc or brief points to it.
 3. Begin work once the task class and controlling document are clear.
 
 ## Verification Expectations
@@ -55,4 +55,4 @@ The repo ships with three lightweight skills:
 - session-closeout
 - documentation-drift-audit
 
-Use them as guidance for how a smaller project can still benefit from explicit workflow automation.
+Use them as guidance for how both a smaller and larger project can benefit from explicit workflow automation without loading every document by default.

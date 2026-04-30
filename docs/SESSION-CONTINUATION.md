@@ -1,12 +1,12 @@
 ---
 date: 2026-04-30
-branch: main
+branch: large-project
 last_commit: not-yet-created - initial documentation scaffold pending git init
-status: The repository now contains the documentation routing baseline for a React Hello World example, and the next session should refine one concrete work slice instead of broadening scope.
-active_workstream: Hello World documentation baseline
-next_action: Load `docs/plans/hello-world-iteration-plan.md` and choose one small next slice, such as a theme toggle spec or a tiny component structure note.
+status: The repository now demonstrates the scaled workflow variant, and the next session should use the large-project brief to decide whether work belongs in the tracker, the DDL appendix, or a feature-level spec.
+active_workstream: Large-project workflow example
+next_action: Load `docs/plans/large-project-brief.md`, classify the next task, and only then open the tracker or DDL appendix.
 blocking: None
-next_doc: docs/plans/hello-world-iteration-plan.md
+next_doc: docs/plans/large-project-brief.md
 ---
 
 # Session Continuation Notes
@@ -15,22 +15,22 @@ next_doc: docs/plans/hello-world-iteration-plan.md
 
 | Field | Value |
 |---|---|
-| Branch | `main` |
+| Branch | `large-project` |
 | Last Commit | `not-yet-created` - initial documentation scaffold pending git init |
-| Active Workstream | Hello World documentation baseline |
-| Immediate Next Action | Load `docs/plans/hello-world-iteration-plan.md` and choose one small next slice, such as a theme toggle spec or a tiny component structure note. |
+| Active Workstream | Large-project workflow example |
+| Immediate Next Action | Load `docs/plans/large-project-brief.md`, classify the next task, and only then open the tracker or DDL appendix. |
 | Blocking / Waiting | None |
-| Next Doc To Load | `docs/plans/hello-world-iteration-plan.md` |
+| Next Doc To Load | `docs/plans/large-project-brief.md` |
 
 ---
 
 ## Start Here
 
-**Do this first next session:** open `docs/plans/hello-world-iteration-plan.md` and pick exactly one small follow-up slice.
+**Do this first next session:** open `docs/plans/large-project-brief.md` and use it to route the task before loading any deeper planning document.
 
-**Why this is first:** the repository scaffold is already in place, so the next session should refine a single concrete direction instead of adding more meta-documentation.
+**Why this is first:** a larger project benefits from explicit document roles, and the brief prevents every session from opening the tracker, appendix, and specs all at once.
 
-**Load next:** `docs/plans/hello-world-iteration-plan.md`
+**Load next:** `docs/plans/large-project-brief.md`
 
 ---
 
@@ -41,27 +41,28 @@ next_doc: docs/plans/hello-world-iteration-plan.md
 - Wrote a documentation-first structure tuned for a simple React Hello World app.
 - Added one example file for every folder under `docs/`.
 
-**Session routing system adapted ✅**
-- Added lightweight repo-local skills for session start, closeout, and documentation drift checks.
-- Rewrote the workflow so it stays proportional to a tiny project.
+**Large-project workflow added ✅**
+- Added a thin routing brief for scaled session start.
+- Split the large-project planning example into a brief, an execution tracker, and a DDL plus field-ownership appendix.
+- Added explanatory text describing why the larger workflow uses more document roles than `main`.
 
 **Future routes documented ✅**
-- Added an active plan, a spec, an ADR, a pattern note, a troubleshooting guide, and an archived session example.
-- Made it possible for future sessions to route into different docs based on task type.
+- Preserved the small-project examples while adding a larger-project routing path.
+- Made it possible for future sessions to route into tracker, appendix, spec, ADR, or troubleshooting docs based on task type.
 
 ---
 
 ## Next Session Focus
 
 1. Pick one tiny evolution of the Hello World app.
-   Specific next action: choose whether the next slice is product behavior, implementation planning, or documentation refinement.
-   Success criteria: one controlling document becomes the active source for the next work session.
+   Specific next action: choose whether the next slice is execution-tracker work, schema-shaping work, or product-spec work.
+   Success criteria: the brief points to exactly one deeper document for the chosen slice.
 
-2. Keep the example intentionally small.
-   Specific next action: avoid inventing unnecessary process unless the imagined app truly grows.
-   Success criteria: all future docs remain easy to scan in a few minutes.
+2. Keep the split-plan model disciplined.
+   Specific next action: avoid duplicating execution state into the DDL appendix or long schema rationale into the tracker.
+   Success criteria: each active planning document keeps one clear job.
 
-**See `docs/plans/hello-world-iteration-plan.md` for the active next-step tracker.**
+**See `docs/plans/large-project-brief.md` for the active routing entry point.**
 
 ---
 
@@ -69,10 +70,10 @@ next_doc: docs/plans/hello-world-iteration-plan.md
 
 ```bash
 git status --short
-find docs -maxdepth 2 -type f | sort
+find docs -maxdepth 3 -type f | sort
 sed -n '1,80p' docs/SESSION-CONTINUATION.md
 ```
 
 ---
 
-**Key Insight for Next Session:** the system is now useful only if the next session chooses one small concrete slice instead of adding more framework around an already-simple example.
+**Key Insight for Next Session:** the scaled workflow is useful only if sessions respect the routing order and avoid opening the tracker, appendix, and specs by default.

@@ -1,6 +1,9 @@
 # Session Continuation Agent Entry Point
 
-This repository uses a small documentation-routing workflow for a simple React Hello World application.
+This repository demonstrates two documentation-routing workflows for a React application:
+
+- a minimal `main` branch for a tiny Hello World app
+- a `large-project` branch for a much broader product with multiple active documentation layers
 
 ## Start Here
 
@@ -28,11 +31,14 @@ This repository uses a small documentation-routing workflow for a simple React H
 ## Source Of Truth Order
 
 1. `docs/SESSION-CONTINUATION.md`
-2. `docs/plans/README.md`
-3. the active plan or spec for the current task
+2. `docs/plans/large-project-brief.md` on `large-project`, otherwise `docs/plans/README.md`
+3. the active tracker, spec, ADR, or appendix for the current task
 4. `.github/copilot-instructions.md`
 5. archived material under `docs/sessions/` and `docs/plans/completed/`
 
 ## Scope Reminder
 
-This is a tiny example project. Do not invent enterprise process where a short document will do. The workflow should stay intentionally small and easy to scan.
+Choose the workflow that matches the branch:
+
+- on `main`, do not invent enterprise process where a short document will do
+- on `large-project`, use the brief and split-plan model to prevent large-project context sprawl

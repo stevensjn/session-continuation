@@ -1,13 +1,13 @@
 ---
 name: session-router
-description: Route work in this repository by deciding which small set of documents to load for the session.
+description: Route work in this repository by deciding which small set of documents to load for a React Hello World session.
 argument-hint: Describe the task or session goal that needs routing.
 user-invocable: true
 ---
 
 # Session Router
 
-Use this skill to keep session start lightweight.
+Use this skill to keep session start lightweight, even when the project itself is large.
 
 ## What This Skill Does
 
@@ -20,7 +20,7 @@ It decides:
 ## Always Load First
 
 1. `docs/SESSION-CONTINUATION.md`
-2. `docs/plans/README.md` only if the next document role is still unclear
+2. `docs/plans/large-project-brief.md` on `large-project`, otherwise `docs/plans/README.md` only if the next document role is still unclear
 3. this skill when routing is needed
 
 ## Task Classes
@@ -30,6 +30,8 @@ Choose one controlling task class:
 - session housekeeping
 - product behavior refinement
 - implementation shape discussion
+- execution tracking for a large workstream
+- schema, DDL, or field-ownership work
 - durable architecture decision
 - troubleshooting or operator support
 - documentation consistency audit
@@ -52,6 +54,22 @@ Load:
 Load:
 - `docs/patterns/react-component-pattern.md`
 - `docs/plans/hello-world-iteration-plan.md` if active work tracking matters
+
+### Execution Tracking For A Large Workstream
+
+Load:
+- `docs/plans/large-project-brief.md`
+- `docs/plans/large-project-tracker.md`
+
+Do not load the DDL appendix unless the task actually changes schema or field ownership.
+
+### Schema, DDL, Or Field-Ownership Work
+
+Load:
+- `docs/plans/large-project-brief.md`
+- `docs/plans/large-project-ddl-and-field-ownership.md`
+
+Add `docs/plans/large-project-tracker.md` only if rollout order or active slice tracking also matters.
 
 ### Durable Architecture Decision
 

@@ -48,6 +48,19 @@ Default load order for a new session:
 
 Do not load everything just because it exists.
 
+## Small Vs Large Workflow
+
+On `main`, the controlling doc is usually one active plan or one feature spec.
+
+On `large-project`, the recommended path is:
+
+1. `docs/SESSION-CONTINUATION.md`
+2. `docs/plans/large-project-brief.md`
+3. `docs/plans/large-project-tracker.md` for active execution work
+4. `docs/plans/large-project-ddl-and-field-ownership.md` only when schema, DDL, or field ownership questions are in scope
+
+This works because the brief stays thin, the tracker stays operational, and the DDL appendix stays durable.
+
 ## Why This Structure Exists
 
 Even for a Hello World app, the difference between active docs, archived docs, and permanent decisions matters. A small project becomes easier to maintain when each file has one clear role.
