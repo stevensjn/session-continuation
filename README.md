@@ -12,7 +12,7 @@ It intentionally contains no production code. The goal is to demonstrate:
 
 ## Project Shape
 
-The repository now teaches two variants of the same idea:
+The repository teaches two variants of the same idea:
 
 - `main` shows the smallest useful workflow for a simple React Hello World application
 - `large-project` shows how the workflow changes when the imagined React project grows into a multi-workstream product with active execution tracking and schema ownership concerns
